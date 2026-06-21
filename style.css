@@ -361,7 +361,10 @@ ul {
 .hero-visual {
   position: relative;
   min-height: 440px;
-  pointer-events: none;
+}
+
+.hero-visual a {
+  display: block;
 }
 
 .visual-card {
@@ -396,6 +399,12 @@ ul {
   aspect-ratio: 16 / 10;
   object-fit: cover;
   object-position: center top;
+  border: 4px solid rgba(255, 255, 255, 0.9);
+  border-radius: calc(var(--radius-lg) - 1px);
+}
+
+.hero-visual a {
+  cursor: pointer;
 }
 
 .floating-card {
